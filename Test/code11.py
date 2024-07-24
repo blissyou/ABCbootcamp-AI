@@ -2,8 +2,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 (train_images, train_labels), (test_images, test_labels) = (
-    tf.keras.datasets.mnist.load_data(path="/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/AItest/Test"
-                                           "/mnist.npz"))
+    tf.keras.datasets.mnist.load_data(path="/Test/datas/mnist.npz"))
 
 
 print(train_images.shape)
@@ -33,8 +32,9 @@ test_labels = tf.keras.utils.to_categorical(test_labels)
 model.fit(train_images, train_labels, epochs=5, batch_size=128)
 
 print(model.evaluate(test_images, test_labels))
+
 import cv2
-image = cv2.imread(filename="/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/AItest/Test/test.png"
+image = cv2.imread(filename="/Test/datas/test.png"
                    , flags=cv2.IMREAD_GRAYSCALE)
 image = cv2.resize(src = image, dsize = (28, 28))
 image = image.astype('float32')

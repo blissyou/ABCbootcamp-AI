@@ -4,4 +4,5 @@ from sklearn.preprocessing import OneHotEncoder
 onehotencoder = OneHotEncoder() # 원하는 열을 뽑아서 2차원 배열로 만들어서 전달하여야 한다.
 XX = onehotencoder.fit_transform(X[:,0].reshape(-1,1)).toarray()
 print(XX)
-X = np.delete(X, [0], axis=1) # 0번째 열 삭제 X = np.c
+X = np.delete(X, [0], axis=1) # 0번째 열 삭제
+X = np.c
