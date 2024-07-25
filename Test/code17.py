@@ -1,6 +1,5 @@
 import ssl
 import time
-
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
@@ -45,15 +44,16 @@ model_CNN.summary()
 model_CNN.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])
 # model_CNN.fit(x=X_train_CNN,y=y_train,epochs=100)
 # model_CNN.save('2024-07-24-CNN.keras')
-model2 = tf.keras.models.load_model('2024-07-24-CNN.keras')
+model2 = tf.keras.models.load_model('/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/AItest/Test/datas/2024-07-24-CNN.keras')
 y_pred = model2.predict(X_test)
 
+print(y_pred.shape)
 print(f'y_pred[0]:{np.round(y_pred[0])}')
-print(f'y_test[0]:{np.round(y_test[0])}')
-print(f'y_pred[1]:{np.round(y_pred[1])}')
-print(f'y_test[1]:{np.round(y_test[1])}')
-print(f'y_pred[10]:{np.round(y_pred[10])}')
-print(f'y_test[10]:{np.round(y_test[10])}')
+# print(f'y_test[0]:{np.round(y_test[0])}')
+# print(f'y_pred[1]:{np.round(y_pred[1])}')
+# print(f'y_test[1]:{np.round(y_test[1])}')
+# print(f'y_pred[10]:{np.round(y_pred[10])}')
+# print(f'y_test[10]:{np.round(y_test[10])}')
 for i in range(0,10):
     print(f'y_pred{[i]}:{np.round(y_pred[i])}')
     print(f'y_test{[i]}:{np.round(y_test[i])}')
