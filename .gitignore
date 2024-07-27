@@ -3,11 +3,13 @@
 .venv/
 
 # model
-.h5
-.keras
-.cvs
+*.h5
+*.keras
 
 # media 
-.jpg
-.png
-.jpeg
+*.jpg
+*.png
+*.jpeg
+*.pdf
+*.npz
+*.npy
