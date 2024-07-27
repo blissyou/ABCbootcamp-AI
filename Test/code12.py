@@ -1,6 +1,6 @@
 import pandas as pd
 
-df =pd.read_csv(filepath_or_buffer='datas/nonlinear.csv')
+df =pd.read_csv(filepath_or_buffer='../datas/nonlinear.csv')
 print(df.head())
 import matplotlib.pyplot as plt
 

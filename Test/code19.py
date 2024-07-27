@@ -1,5 +1,5 @@
 import cv2
-img = cv2.imread(filename= '/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/AItest/Test/datas/Lenna_512x512.png',flags=cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(filename='/datas/Lenna_512x512.png', flags=cv2.IMREAD_GRAYSCALE)
 (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(img)
 print(minVal, maxVal, minLoc, maxLoc)
 dst = cv2.normalize(img,None,0,255,cv2.NORM_MINMAX)

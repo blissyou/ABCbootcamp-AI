@@ -1,0 +1,13 @@
+.DS_Store
+.idea/
+.venv/
+
+# model
+.h5
+.keras
+.cvs
+
+# media 
+.jpg
+.png
+.jpeg

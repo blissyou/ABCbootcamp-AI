@@ -1,7 +1,7 @@
 import cv2
 
 img = cv2.imread(
-    filename='/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/AItest/Test/datas/Rose.jpeg'
+    filename='/datas/Rose.jpeg'
     , flags=cv2.IMREAD_GRAYSCALE)
 # cv2.imshow(winname = 'Lenna',mat = img)
 # cv2.waitKey()
