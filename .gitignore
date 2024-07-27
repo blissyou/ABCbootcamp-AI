@@ -5,6 +5,7 @@
 # model
 *.h5
 *.keras
+*.weights
 
 # media 
 *.jpg
